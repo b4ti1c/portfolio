@@ -6,7 +6,7 @@ $(function() {
       if (target.length) {
         var scrollValue = target.offset().top;
         if(scrollValue != 0 && window.innerWidth < 768)
-          scrollValue -= 195;
+          scrollValue -= 60;
 
         $('html, body').animate({
           scrollTop: scrollValue
@@ -14,5 +14,9 @@ $(function() {
         return false;
       }
     }
+  });
+
+  $('.nav a').on('click', function(){
+      $('.navbar-toggle').click();
   });
 });
