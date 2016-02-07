@@ -1,6 +1,4 @@
 html body * {
-    user-select: disable !important;
-
     color: white;
     text-shadow:
        -1px -1px 0 black,  
@@ -10,6 +8,13 @@ html body * {
 
     font-family: Josefin Sans;
     font-weight: 100;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+     -webkit-user-select: none;   /* Chrome/Safari/Opera */
+     -khtml-user-select: none;    /* Konqueror */
+     -moz-user-select: none;      /* Firefox */
+     -ms-user-select: none;       /* IE/Edge */
+     user-select: none;
 }
 
 td {
@@ -71,7 +76,7 @@ project {
     transition-timing-function: ease;
 }
 
-project:hover {
+project:not(.incoming):hover {
     -ms-transform: scale(1.11,1.11); /* IE 9 */
     -webkit-transform: scale(1.11,1.11); /* Safari */
     transform: scale(1.11,1.11);
@@ -90,10 +95,76 @@ project:hover {
     margin-bottom: 5px;
 }
 
-.incoming {
+.incoming-title {
     position: absolute;
+    cursor: default;
     top: 45%;
     left: 0;
     right: 0;
     font-weight: 200;
+}
+
+#contact {
+    background: url('https://41.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact * {
+    text-shadow: none;
+
+    -webkit-transition-duration: .25s; /* Safari */
+    transition-duration: .25s;
+    -webkit-transition-timing-function: ease; /* Safari and Chrome */
+    transition-timing-function: ease;
+}
+
+.contact a {
+    background: rgba(255,255,255,0.35);
+    border: 1px solid black;
+
+    color: black;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+.contact i {
+    color: black;
+
+        -webkit-transition-duration: .25s; /* Safari */
+    transition-duration: .25s;
+    -webkit-transition-timing-function: ease; /* Safari and Chrome */
+    transition-timing-function: ease;
+}
+
+.contact a:hover {
+    -ms-transform: scale(1.11,1.11); /* IE 9 */
+    -webkit-transform: scale(1.11,1.11); /* Safari */
+    transform: scale(1.11,1.11);
+
+    color: white;
+    background: rgba(0,0,0, 0.8);
+
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+.contact a:hover i {
+    color:white;
+}
+
+.contact a:active {
+    background: wheat;
+    color: black !important;
+    -ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(1,1); /* Safari */
+    transform: scale(1,1);
+}
+
+.contact a:active i {
+    color: black;
 }
