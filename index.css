@@ -236,3 +236,13 @@ project:not(.incoming):hover {
 .contact a:active i {
     color: black;
 }
+
+
+@media only screen and (max-device-width: 768px) {
+    #home, #projects, #contact {
+        -webkit-background-attachment: scroll !important;
+        -moz-background-attachment: scroll !important;
+        -o-background-attachment: scroll !important;
+        background-attachment: scroll !important;
+    }
+}
