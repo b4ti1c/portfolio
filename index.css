@@ -60,12 +60,16 @@ td {
 
 .home-bg-overlay {
     background: rgba(0,0,0,0.3);
-    padding-top: 210px;
+    padding-top: 150px;
     padding-bottom: 50px;
 }
 
 .divider {
     border-color: rgba(30,30,30,0.6);
+}
+
+#thesis {
+    cursor: pointer;
 }
 
 .pb10 {
