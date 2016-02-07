@@ -37,7 +37,25 @@ td {
 
 #home{
     background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center center fixed;
-    background-size: cover;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    
+    -webkit-background-repeat: no-repeat !important;
+    -moz-background-repeat: no-repeat !important;
+    -o-background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important;
+
+    -webkit-background-position: center center !important;
+    -moz-background-position: center center !important;
+    -o-background-position: center center !important;
+    background-position: center center !important;
+
+    -webkit-background-attachment: fixed !important;
+    -moz-background-attachment: fixed !important;
+    -o-background-attachment: fixed !important;
+    background-attachment: fixed !important;
 }
 
 .home-bg-overlay {
@@ -56,7 +74,25 @@ td {
 
 #projects {
     background: url('https://41.media.tumblr.com/eb2382a5a4c996cfdab27bc0d1eb51ff/tumblr_nt5umxS1FY1ud7rr3o1_1280.jpg') no-repeat center center fixed;
-    background-size: cover;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+
+    -webkit-background-repeat: no-repeat !important;
+    -moz-background-repeat: no-repeat !important;
+    -o-background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important;
+
+    -webkit-background-position: center center !important;
+    -moz-background-position: center center !important;
+    -o-background-position: center center !important;
+    background-position: center center !important;
+
+    -webkit-background-attachment: fixed !important;
+    -moz-background-attachment: fixed !important;
+    -o-background-attachment: fixed !important;
+    background-attachment: fixed !important;
 }
 
 .bg-overlay {
@@ -120,7 +156,25 @@ project:not(.incoming):hover {
 
 #contact {
     background: url('https://41.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg') no-repeat center center fixed;
-    background-size: cover;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+
+    -webkit-background-repeat: no-repeat !important;
+    -moz-background-repeat: no-repeat !important;
+    -o-background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important;
+
+    -webkit-background-position: center center !important;
+    -moz-background-position: center center !important;
+    -o-background-position: center center !important;
+    background-position: center center !important;
+
+    -webkit-background-attachment: fixed !important;
+    -moz-background-attachment: fixed !important;
+    -o-background-attachment: fixed !important;
+    background-attachment: fixed !important;
 }
 
 .contact {
