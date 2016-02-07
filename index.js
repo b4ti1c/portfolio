@@ -4,8 +4,12 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
+        var scrollValue = target.offset().top;
+        if(scrollValue != 0 && window.innerWidth < 768)
+          scrollValue -= 195;
+
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: scrollValue
         }, 250);
         return false;
       }
