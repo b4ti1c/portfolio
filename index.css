@@ -1,0 +1,99 @@
+html body * {
+    user-select: disable !important;
+
+    color: white;
+    text-shadow:
+       -1px -1px 0 black,  
+        1px -1px 0 black,
+        -1px 1px 0 black,
+         1px 1px 0 black;
+
+    font-family: Josefin Sans;
+    font-weight: 100;
+}
+
+td {
+    vertical-align: middle !important;
+}
+
+#home{
+    background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.home-bg-overlay {
+    background: rgba(0,0,0,0.3);
+    padding-top: 210px;
+    padding-bottom: 50px;
+}
+
+.divider {
+    border-color: rgba(30,30,30,0.6);
+}
+
+.pb10 {
+    padding-bottom: 10px;
+}
+
+#projects {
+    background: url('https://41.media.tumblr.com/eb2382a5a4c996cfdab27bc0d1eb51ff/tumblr_nt5umxS1FY1ud7rr3o1_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bg-overlay {
+    padding: 50px 0;
+    background: rgba(0,0,0,0.3);
+}
+
+nav.navbar {
+    background-color: rgba(0,0,0,0.75);
+}
+
+.navbar-brand {
+    cursor: default !important;
+    user-select: disable !important;
+}
+
+.navbar-brand, .navbar-nav>li>a {
+    color: wheat !important;
+}
+
+project {
+    display: block;
+    padding: 20px;
+    padding-bottom: 30px;
+    background: rgba(0,0,0,0.8);
+    margin-top: 30px;
+
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-duration: .5s;
+    -webkit-transition-timing-function: ease; /* Safari and Chrome */
+    transition-timing-function: ease;
+}
+
+project:hover {
+    -ms-transform: scale(1.11,1.11); /* IE 9 */
+    -webkit-transform: scale(1.11,1.11); /* Safari */
+    transform: scale(1.11,1.11);
+
+    -webkit-box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.75);
+}
+
+.project-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.incoming {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    font-weight: 200;
+}
